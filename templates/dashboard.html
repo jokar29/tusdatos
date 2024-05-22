@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Demandante</th>
+                <th>Fecha</th>
+                <th>Proceso</th>
+                <th>Accion</th>
+                <!-- Agrega más encabezados de columna según tu CSV -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in csv_data %}
+            <tr>
+                <td>{{ row.demandante }}</td>
+                <td>{{ row.fecha }}</td>
+                <td>{{ row.proceso }}</td>
+                <td>{{ row.accion }}</td>
+                <!-- Agrega más celdas según tu CSV -->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

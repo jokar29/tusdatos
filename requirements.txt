@@ -1,0 +1,10 @@
+requests
+bs4
+selenium
+fastapi
+uvicorn
+pydantic
+python-jose[cryptography]
+passlib[bcrypt]
+webdriver-manager
+pandas
